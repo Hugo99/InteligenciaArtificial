@@ -40,7 +40,8 @@ class TryTesting(TestCase):
     def test_maze5_solution(self):
         m = Maze("maze5.txt")
         m.solve()
-        self.assertEqual(m.solution,(['right', 'up', 'up', 'up', 'up', 'right', 'right', 'right',
-                                    'right', 'right','right', 'right', 'right', 'right', 'right'],
-                                    [(15, 1), (14, 1), (13, 1), (12, 1), (11, 1), (11, 2), (11, 3),
-                                    (11, 4), (11, 5), (11, 6), (11, 7), (11, 8), (11, 9), (11, 10), (11, 11)]))
+        self.assertEqual(m.solution,(['down','down','right','right','down','down','right','right','right','right','right',
+                                    'down','right','right','right','up','up','up','up','up'],
+                                    [(1, 0),(2,0),(2,1),(2,2)(3,2),(4,2),(4,3),(4,4),(4,5),(4,6),(4,7),(5,7),(5,8),
+                                    (5,9),(5,10),(4,10),(3,10),(2,10),(1,10),(0,10),(0,9),(0,8),(0,7),(0,6),(0,5),(0,4),
+                                    (0,3)]))
